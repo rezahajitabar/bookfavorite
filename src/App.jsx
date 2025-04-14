@@ -1,10 +1,12 @@
 import {books} from './constants/mockData'
-
+import Layout from './layout/Layout';
+import Books from '../src/components/Books.jsx'
 function App() {
   return (
     <>
-      <h1>Book App Starting files</h1>
-      {books.map((book)=> <p>{book.country}</p>)}
+      <Layout>
+        <Books/>
+      </Layout>
     </>
   );
 }
